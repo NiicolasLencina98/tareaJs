@@ -78,3 +78,16 @@ const plantNeedsWater = (day) => {
 //Otro tipo de refactorizacion en un solo bloque es el siguiente 
 
 const plantNeedsWater2 = day => day === 'Wednesday' ? true : false;
+
+//Funciones globales 
+//Notarás que el bloque de funciones callMyNightSky()puede acceder a las variables globales libremente ya que las variables están disponibles para todas las líneas de código del archivo.
+const satellite = 'The Moon';
+const galaxy ='The Milky Way';
+const stars = 'North Star';
+
+function callMyNightSky(){
+  return 'Night Sky: ' + satellite + ', ' + stars + ', and ' + galaxy;
+}
+
+
+console.log(callMyNightSky())
