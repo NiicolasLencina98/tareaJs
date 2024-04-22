@@ -24,3 +24,4 @@ function getReminder(){
   }
   
   sayThanks('Cole')
+  //Prueba de conexion
