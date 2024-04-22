@@ -18,3 +18,9 @@ function getReminder(){
   sayThanks()
   
   //Parametros y argumentos en una funcion
+  // aca le damos un parametro y un argumento en este caso es Name, aca realizamos un saludo personalizado.
+  function sayThanks(name) {
+    console.log('Thank you for your purchase '+ name + '! We appreciate your business.');
+  }
+  
+  sayThanks('Cole')
