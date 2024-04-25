@@ -52,3 +52,21 @@ itemTracker.push('item 3', 'item 4');
 
 console.log(itemTracker); 
 // Output: ['item 0', 'item 1', 'item 2', 'item 3', 'item 4'];
+/*
+Repasemos lo que sucedió en el ejemplo:
+
+La flowersmatriz que tiene 3 elementos.
+La función addFlower()tiene un parámetro de arrusos .push()para agregar un 'lily'elemento arr.
+Llamamos addFlower()con un argumento flowersque ejecutará el código interno addFlower.
+¡Comprobamos el valor de flowersy ahora incluye el 'lily'elemento! ¡La matriz fue mutada!
+*/
+
+const flowers = ['peony', 'daffodil', 'marigold'];
+
+function addFlower(arr) {
+  arr.push('lily');
+}
+
+addFlower(flowers);
+
+console.log(flowers); // Output: ['peony', 'daffodil', 'marigold', 'lily']
